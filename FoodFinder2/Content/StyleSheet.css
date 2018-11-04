@@ -1,0 +1,53 @@
+﻿body {
+}
+
+
+.foodfinder_text{
+    margin-top:90px;
+    height: 180px;
+    width:100%;
+    line-height: 100%;    
+    vertical-align:middle;
+    text-align: center;    
+}
+.searchbar{
+    padding: 5px 16px 10px, 0;  
+    
+}
+
+.search{
+    height:44px;
+    width:484px;
+    font-size:17px;
+    box-shadow: 0 2px 1px #e6e6e6;
+    border: 1px solid #dddddd;
+    border-radius:2px;
+      
+}
+.search:hover{
+    box-shadow: 0 2px 4px 3px #e6e6e6;
+}
+.submit_btn{
+    padding-top:25px;
+}
+.searchbtn{
+    height:44px;
+    line-height:27px;
+    border: 1px solid #f2f2f2;
+    background-color:#f2f2f2;
+    color:#757575;
+    font-family: Arial,sans-serif;
+    font-size:13px;
+    font-weight:bold;
+    margin: 11px 4px;
+}
+.searchbtn:hover{
+    border:1px solid #757575;
+    color:black;
+    box-shadow:0 0.5px 1px grey;
+}
+img.middle
+{
+	float: right;
+    width: 50%;
+}
