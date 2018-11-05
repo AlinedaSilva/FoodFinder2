@@ -8,7 +8,7 @@ namespace FoodFinder2.Models
 {
     public class FoodFinder2Context: DbContext
     {
-        public FoodFinder2Context() : base("FoodFinder2Context")
+        public FoodFinder2Context() : base("DefaultConnection")
         {
         }
         public DbSet<Product> products { get; set; }

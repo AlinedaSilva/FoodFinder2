@@ -14,9 +14,7 @@ namespace FoodFinder2.Controllers
         FoodFinder2Context listDB = new FoodFinder2Context();
 
         public Func<decimal> CartTotal { get; private set; }
-
-
-
+        
         // GET: ShoppingCart from shopping list but as as I am using a make request method might be incorrect
         public ActionResult Index() // will need to be changed!!! as it needs to direct to the MakeRequest Method
         {
@@ -29,9 +27,10 @@ namespace FoodFinder2.Controllers
             };
             return View(viewModel);
         }
-        public ActionResult AddToCart(int id)
+        
+        public ActionResult AddToCart(string name)
         {
-            var addedProduct = listDB.products.Single(product => product.ID == id);
+            var addedProduct = listDB.products.FirstOrDefault(product => product.Name == name);
             var cart = ShoppingCart.GetCart(this.HttpContext);
             cart.AddToCart(addedProduct);
             return RedirectToAction("Index");
