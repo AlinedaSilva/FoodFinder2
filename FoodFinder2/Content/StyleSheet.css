@@ -3,7 +3,7 @@
 
 
 .foodfinder_text{
-    margin-top:90px;
+    margin-top:2390px;
     height: 180px;
     width:100%;
     line-height: 100%;    
@@ -29,6 +29,7 @@
 }
 .submit_btn{
     padding-top:25px;
+    color: cornflowerblue;
 }
 .searchbtn{
     height:44px;
@@ -46,8 +47,4 @@
     color:black;
     box-shadow:0 0.5px 1px grey;
 }
-img.middle
-{
-	float: right;
-    width: 50%;
-}
+

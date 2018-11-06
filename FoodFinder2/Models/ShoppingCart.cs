@@ -40,7 +40,6 @@ namespace FoodFinder2.Models
                 cartItem.Count++;
             }
             listDB.SaveChanges();
-
         }
         public int RemoveFromCart(int id)
         {
