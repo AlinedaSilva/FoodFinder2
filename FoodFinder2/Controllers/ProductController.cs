@@ -23,7 +23,7 @@ namespace FoodFinder2.Controllers
             System.Net.ServicePointManager.SecurityProtocol |= SecurityProtocolType.Tls12;
 
             var client = new HttpClient();
-            client.DefaultRequestHeaders.Add("Ocp-Apim-Subscription-Key", "1f018fcb123847b182d07573e0813f5f");
+            client.DefaultRequestHeaders.Add("Ocp-Apim-Subscription-Key", "api key");
 
             var uri = string.Format("https://dev.tescolabs.com/grocery/products/?query={0}&offset={1}&limit={2}", q, 0, 100);
 
@@ -43,6 +43,5 @@ namespace FoodFinder2.Controllers
             }
             return View(products);
         }
-
     }
 }
